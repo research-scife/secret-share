@@ -64,3 +64,9 @@ python encrypt.py --input_file=demo_secret.txt
 # Things to get from SFC :
 
 AWS credentials (username, key id and secret) and KMS key id.
+
+# Things to send to SFC :
+
+Once you run the encrypt script, it will generate two cipther files. If your input_file was `demo_secret.txt` then the cipher files will be `demo_secret_data_key_cipher` and `demo_secret_cipher` ie file_name_without_extension_cipher and file_name_without_extension_data_key_cipher. Please send these two files to us via email. The AWS permissions are set such that, the files can be decrypted by our master key only.
+
+
