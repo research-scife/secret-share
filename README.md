@@ -25,32 +25,32 @@ We will provide you an AWS key and secret and username. Please add them in your 
 
 For example : if we provide : 
 
-username : `cliXXXXXX` 
-key : `AKIAZRWLTNXXXXXXXXX`
-secret : `4tA/B5uKNdKXXXXXXXXXXXXXXXXX`
+username : `userXXXXXX` 
+key : `AKIXXXXXXXXXXXXXXXXXXXXXX`
+secret : `4tXXXXXXXXXNdKXXXXXXXXXXXXXXXXX`
 
 Then in your `~/.aws/credentials` file, add the following line at the end : 
 ```
 
-[cliXXXXXX]
-aws_access_key_id = AKIAZRWLTNXXXXXXXXX
-aws_secret_access_key = 4tA/B5uKNdKXXXXXXXXXXXXXXXXX
+[userXXXXXX]
+aws_access_key_id = AKIXXXXXXXXXXXXXXXXXXXXXX
+aws_secret_access_key = 4tXXXXXXXXXNdKXXXXXXXXXXXXXXXXX
 
 ```
 
-Make sure the name `cliXXXXXX` is unique in your system. If you already have such a name in your system, please let us know, we will provide a different name.
+Make sure the name `userXXXXXX` is unique in your system. If you already have such a name in your system, please let us know, we will provide a different name.
 
 Then activate the profile by running : 
 ```
-export AWS_PROFILE=cliXXXXXX
+export AWS_PROFILE=userXXXXXX
 ```
 
 # Configuring the KMS key
 
-We will also share an KMS key id. If the key id is `fb4115fd-0ab7-XXXXXXXXXXXXXXXXXXXXXXXXX` then run
+We will also share an KMS key id. If the key id is `YYYYYYYY-0ab7-XXXXXXXXXXXXXXXXXXXXXXXXX` then run
 
 ```
-export cmk=fb4115fd-0ab7-XXXXXXXXXXXXXXXXXXXXXXXXX
+export cmk=YYYYYYYY-0ab7-XXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
 # Encrypt a sample file
